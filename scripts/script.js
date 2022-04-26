@@ -16,7 +16,7 @@ let snackbar = (text, time) => {
     setTimeout(function() { ele.className = ele.className.replace('show', ''); }, time);
 }
 const addtoCal = () => {
-        window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NnNpYmQwdHVxdGFvdjk2OWEwdmxhYWJxZ24gc2Jjb21wc2NpY2x1YkBt&tmsrc=sbcompsciclub%40gmail.com')
+        window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=MGo4bGFxOWlqNnQ3ZGUzc2dkZzY2NGU5dDggY3NjbHViQHNic2Nob29scy5vcmc&tmsrc=csclub%40sbschools.org')
     },
     db = firebase.database();
 
@@ -109,8 +109,9 @@ const submit = () => {
 }
 let toggleModal = () => {
     //snackbar('Sorry, Signups didn');
-    let ele = id('signup-modal');
-    ele.classList.toggle("is-active");
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScroNRF3-KDpJjF-kX1BybSLjw7HgNzQFTcpvgjXZiAyi5AqA/viewform');
+    //let ele = id('signup-modal');
+    //ele.classList.toggle("is-active");
 }
 // LINE#2 zscqizmyqewvltjswkoepislhrgayz
 window.onscroll = function() {
