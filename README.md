@@ -16,6 +16,6 @@ In effort to keep the source code and the production build, we used some little 
 Instead of minifying out code using webpack or parcel which would require a different type of a project architecture, we used the Cloudflare's CDN service and installed a few scripts which will minify our code on the server and cache the page when offline using the Service Worker API.
 
 # Backend
-We believe in the serverless ideology, therefore we used firebase realtime database to store the user information. We used firebase cloud functions to secure our database to restrict unwanted reads and writes to the DB. Using React js we were able to create a visualization of the data.
+Theres is nothing but google forms
 
 .<sub><sub>#6 ynoywkztcdifmtjoyjhlnvsnlrekwv</sub></sub>
