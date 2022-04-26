@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HackSB, theHackSB, South Brunswick Hackathon, Hackathon South Brunswick" />
+    <meta name="description" content="Hack SB - 24 hour hackathon for High School students at the South Brunswick High School April 4th 2020 - April 5th" />
+    <meta name="subject" content="Hack SB - 24 hour hackathon for High School students">
+    <meta name="copyright" content="theHackSB">
+    <meta name="robots" content="index,follow" />
+    <meta name="topic" content="Hack SB Hackathon">
+    <meta name="summary" content="Hack SB - 24 hour hackathon for High School students at the South Brunswick High School">
+    <meta name="author" content="theHackSB, team@hacksb.org">
+    <meta name="Line#1" value="jopqvraunkxzvnuyrwpnfsrxahkcqv" />
+    <meta name="copyright" content="HackSB">
+    <meta name="reply-to" content="team@hacksb.org">
+    <meta name="category" content="hackathon">
+    <meta http-equiv="Cache-Control" content="cache">
+    <meta name="og:title" content="Hack SB" />
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="media/logo.png" />
+    <meta name="og:site_name" content="Hack SB" />
+    <meta name="og:description" content="Hack SB - 24 hour hackathon for High School students at the South Brunswick High School" />
+    <meta name="og:email" content="team@hacksb.org" />
+    <meta name="og:country-name" content="USA" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.ico" />
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <link rel="stylesheet" href="styles/animate.min.css" />
+    <link rel="stylesheet" href="https://sethusenthil.com/Product-Sans/api/font.css" />
+    <link rel="stylesheet" href="styles/modal-fx.min.css" />
+    <link rel="stylesheet" href="styles/bulma-carousel.min.css">
+    <link rel="stylesheet" href="styles/fa/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Hack SB - South Brunswick Hackathon</title>
+</head>
+
+<body>
+    <noscript>
+        You need to enable Javascript to run the app
+    </noscript>
+    
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
+        <a style="color: white;" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#about">
+                    About
+                </a>
+
+                <a class="navbar-item" href="#faq">
+                    FAQ
+                </a>
+
+                <a class="navbar-item" href="#schedule">
+                    Schedule
+                </a>
+                <a class="navbar-item" href="#sponsors">
+                    Sponsors
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary theme-color modal-button" onclick="toggleModal()">
+                            <strong>Sign up</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Content -->
+    <a id="modal-button" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:200 !important;" data-target="signup-modal">
+        <!--<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-blue.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"> --></a>
+    <div class="main">
+        <!-- related modal with fx class "modal-fx-fadeInScale" -->
+        <div id="signup-modal" class="modal modal-fx-fadeInScale">
+            <div class="modal-background"></div>
+            <div class="modal-content" style="background-color: white; width: 98% !important; border-radius: 25px;">
+                <div style="margin: 30px;">
+                    <div class="field">
+                        <label class="label">First Name</label>
+                        <div class="control">
+                            <input id="firstName" class="input" type="text" placeholder="First Name">
+                        </div>
+                    </div>
+                    <label class="label">Last Name</label>
+                    <div class="control">
+                        <input id="lastName" class="input" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input id="email" class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label">Phone Number</label>
+                        <input id="phone" class="input" type="tel" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </div>
+                    <div class="field">
+                        <label class="label">Grade</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="grade">
+                                    <option>Select Grade</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">School</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="schoooool">
+                                    <option>Select School</option>
+                                    <option>South Brunswick High School</option>
+                                    <option>Other (enter below)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="otherSchoolCon">
+                        <label class="label"><b>Other</b> School</label>
+                        <div class="control">
+                            <input class="input" id="otherSchool" type="text" placeholder="school name">
+                        </div>
+                    </span>
+                    <br>
+                    <label class="label">vegetarian or non-vegetarian</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="veg">
+                                <option>Vegetarian</option>
+                                <option>Non-vegetarian - White Meat (chicken 🐔🐟)</option>
+                                <option>No Preference</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="gfont">*if you have any dietary constrictions not listed you will be responsible for
+                     your own food</span>
+                    <br>
+                    <br>
+
+                    <label class="label"><b>Notes (dietary restrictions, special needs)</label>
+                    <div class="control">
+                        <textarea id="notes" class="textarea" placeholder="If you have nothing please leave it blank"></textarea>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <br>
+                            <button class="button is-link theme-color" onclick="submit();">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="toggleModal()"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="particles-js"></div>
+    <section class="allMain">
+        <div class="displayer">
+            <br>
+            <br>
+            <h1 class="title is-1 wow slideInDown txtShadow" style="color:rgb(39, 38, 38)">Hack SB</h1>
+            <h1 class="title is-2 txtShadow" style="color:rgb(204, 202, 202)">May <span id="date">21st</span></h1>
+            <center>
+                <img src="/media/c-logo.png" alt="logo" class="logoDisplay">
+                <br>
+                <br>
+                <a id="under-btn" class="button theme-color modal-button" style="color:white;" onclick="toggleModal()">
+                    <center>Sign Up Now!</center>
+                </a>
+            </center>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <section id="about">
+        <center>
+            <br>
+            <h1 class="title is-1">About</h1>
+            <h1 class="title is-3">What is Hack SB?</h1>
+            <span>Hack SB is a 24 hour student organized hackathon for high school students.</span>
+            <br>
+            <br>
+            <h1 class="title is-3">What is a Hackathon?</h1>
+            <span>A hackathon is an event where groups of enthusiastic people come together to build awesome things in
+                a limited period of time. At a hackathon, experienced engineers and interested beginners will learn new
+                skills, build and innovative solutions for real-world problems, and share their creation with the other
+                participants as well as the judges, all in one day. If you want to learn more, see the <a href="https://mlh.io/faq">MLH
+                    Hackathon FAQ</a>.</span>
+
+            <center><iframe src="https://www.youtube.com/embed/qj4DQfYx2Hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top: 10px"></iframe></center>
+            <br>
+            <h1 class="title is-3">When is Hack SB?</h1>
+            <a onclick="addtoCal();"><span style="font-size: 30px !important; font-weight: bold;"><i class="fas fa-calendar"></i>
+                    April 4th 2020 - April 5th 2020</span></a>
+            <br>
+            <br>
+            <h1 class="title is-3">Where is Hack SB?</h1>
+            <a href="https://goo.gl/maps/Vs8Cf3RnYQt" target="_blank"><span style="font-size: 30px !important; font-weight: bold;">
+                    <i class="fas fa-map-marker-alt"></i> South Brunswick High School</span></a>
+            <br>
+            <br>
+            <a class="button theme-color" style="color:white;" onclick="addtoCal()"><i class="fas fa-calendar"></i> Add
+                to Calender</a>
+
+        </center>
+    </section>
+    <section class="hero is-warning is-bold curve" id="navBold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    What are you waiting for?
+                </h1>
+                <h2 class="subtitle">
+                    <a class="button theme-color modal-button" style="color:white;" onclick="toggleModal()">Sign Up
+                        Now!</a>
+                    <a class="button theme-color" style="color:white;" onclick="addtoCal()"><i class="fas fa-calendar"></i>
+                        Add to Calender</a>
+                </h2>
+                <center>
+                    <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
+                        <div class='carousel-container'>
+                            <div class='carousel-item has-background is-active'>
+                                <img class="is-background lazy" data-src="media/prizes.jpg" alt="" />
+                                <div class="title">Win Cool Prizes</div>
+                            </div>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background lazy" data-src="https://lh3.googleusercontent.com/oFOhDLupoEgJz5opX_eh6JpW3FOs68QJQ63ZFqdoRe9JZY1B6e6zQ2EkyKcuFUWSdHZSk-yqaDFvHMvVS8vxZbnHDhtAARA7O4EXFoP1NLGAHIxcbhx5CWCpFe1dLyXQ26Vha-nNh2DxjMafelmaI5cwsEFGJShbwxLaJKIZiQ67y4pnTzZxADJeboHEx5GVZwiO-yaXhnVd93fFxnE4MklrOPw1LQpM7heKr7q6a6ficg6Hn4dagW_FGhRp4iYWyP-Vj0eDVHfw_SJ6VHc0Hh5B9VuN9KHIzugX1E_D6CGZpV7-bHWjU-PPMIQXaa2y_HFRRbIZeDQZNs93T9U0uMiZwPCN5y291KBZ7qlnPQC3OurDqJw5B-DiYudotm3SHmKh2BOG58Dk2u3OrCiWIs2iDM1b04n4GxurbUK2Zk4R0378cfhthII-dScNvoajyHDrGwZJvl_p3TjUxDbhQNQqBIHy-DCIFUNNcXnWz_pj8hFeJoZoKkapVFvfEUB_LxhqLYtZji5OfGj0SBKDYoGbjfsHIf9mS9HeL9aGN-fPLZv-iKle9ZkBHmsJYBkCJ10ZVVsP5iQ2bcr9OTu5NlXOzi2_JSDHnTy74ltblE8i5ywkASxlhib2jnKl9QVcV5SL2kdIs4cRWh2X7qrb8Qz0uG56FnFIt3Qku3A3WF6HNsN0o53JIcKyrHXXuCPqF1h2mBUf5mZxgiqfLw-UQqG4dPhqhEys6Me_NWotoxPxninH=w1600-h1200-no" alt="" />
+                                <div class="title">Attend Workshops</div>
+                            </div>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background lazy" data-src="media/winners.jpg" alt="" />
+                                <div class="title">Win the Hack</div>
+                            </div>
+                            <div class='carousel-item has-background '>
+                                <img class="is-background lazy" data-src="https://lh3.googleusercontent.com/yy33R31QBTOZ4BBFC7yErxMRnt9AagdzNKNcjF6UGrYpZwebaw2UuddYWA7X5XPkL7oeaYsJzgyGJ27Ht_W0hhKx-ZuBauU93SrX-pWc9u1IAH5oOVYNXdqqfi5VI5u275ZWRdGdkpW7-zPrTHjyFtGrfrZBm96VzQZHukO4Y_tC8DhWuBjTlZeW2Ui4bf_jQCcrGJJgQ5OMJLkOf3pYvPZEM9NVovbu3GbnRMgCR6dfMwZaivV8fv7XiFBkJgnF8En_tqCgq2O-U-Kv3XW1PCjEDUPs1HFIu2df25oks8rPlMygLo7NGMwD7o6r4CgV_cTt3exrrLrSpZZ-wrwW-GJAPk3Hlh3WJj_s46k5DkxyngqCuCJlV4E6Q7XbRoSjzX96dKeQRXGd6C-lbW66WfeBu7DrS7bsAtBbQYQ2vUB6Ozj1dN4Bl9_DazjrVzrnMcNpnrKPdaQVQt4wzaGzjz85yh6s8lxGdvp_JqkDx6_D_I7ZJmG0ePhVspRATlRaFCawFQHRuaSeZHnh0g2VnIwkp-_soeLg4woKJQXUfx2iiQzHJJfFlbzXTOD0cr0fyuJYTJhP5j50lcgjXGIBXZ-PZA4zgNtCbOVv0ELXgIuTigto4PGhb_Jzh60gnJt31lXp6MINEv3rSqRzoJ0CPJ5T1ke5WHc4uTLKGA6DxULovRsDJQEM9W-mkjELE_Q40wuBJOXj1aaQXrmWhspz8gxaXuqQyx-fn5JXa_YM6yM-QsRF=w1838-h1378-no" alt="" />
+                                <div class="title">Cop Some Free Swag</div>
+                            </div>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background lazy" data-src="https://lh3.googleusercontent.com/8RmPMD34AwwOCvF8MKB0Ai482HxK3s2b7UVijJphu9MU1vk459PHB0S6mSicUT1b7MmmM0_8cWDUP0iSLZhy45ubl93plr3yQAzl3rIKXka0qMpNb7eHn2j_IhLgGkHbzGIR5yOlAOXAyd88MTQlP7scR35Vc2lrBtFkQIQnA-KSMYrfk5PAu-TSw6wd59KoeBv-X58mZlov4xrly4wN7aQbCg_9C3t3UJVILf0eVoEMOUn_Wo3noG6gLZ5H2aM_xCqL5MccnqpdVlPBD3oGLQBHF7LQ5DaroJSkgR-SNA4ZyEtYtoLF0Fqh1zLbYGcqeOavm5z65RYeyWdlNng7t4X-iSpOv2Igm3LDFSNKb5g-1zkDE3b53Z0gyaFdxZWa7vJUOrOJMnBfOt0IF2tmikbVpUV3WQf3ADlkCIhfRgXg_YKCIb8FpO0NW87iGjM3209GgibeUqQLXK0L8E4IX5Ck92DuXSspQXZeIm1NAl2ddGbq273OnXtdv70fz24PpdX_pkBe3MbAmRXL6sPQiJVlm52tjXU8xlhTOi8ze2lqkqW4rXxySc2frRAMqyb7Xnx23S6l1E8zyyGLOaZy3hshdXmcrzQiJRnbpM9gAyd1t6gz4SXO8oNt2ehYrAYcv2ow2Xh9cm1TDIgZepmywSX0TRDe_RbufXA3KxN2Pkyk0jMpsoNrD_FZwev7EG6qxtyJg7yX3Z2nKQ9YEpwhOKkYso3KqWZ6xv9K3IbahKgLLLc=w1838-h1378-no" alt="" />
+                                <div class="title">Announcements</div>
+                            </div>
+                            <div class='carousel-item has-background'>
+                                <img class="is-background lazy" data-src="https://lh3.googleusercontent.com/pwevQuKka_ETsGPVgkVdaKENhh2QUnP4nBjUgBLgypoLMjTpvvAO7u37xEqueEPvFLSAQu0Gge6fGL47DntwSzafjUn1jI2COw02ulOEcK3jiAuyq-buW4P-vMpIPA8-xtqJNWzA2pvuZm5ORWvnSBxvkyRhNJ3hDWVoBCL2ZmoRo3RxtEIL1zy_hhUmcpKOn66gbUcQ7EsQiJetKZjv_J6jrrwghnhvLqKcxVtZGzuaxNilD0xJsHAMTxb_rhF9JGYxzBgFtihLQSD39sjGf7QDZ7FC74AjOTZZjCDG9d8Nb3LTJ4LiHxfW_zJVPNwv_HhujBLmV7iwq0DuM8WWf8bWwbg3Lc__tQLSxCJE1r9Z6x4TqLTY-6aFF-T5Sh7BSTjb51zxORpDVtbCfTMX0HYi8u1VQVPzPVPSiVvGa2-abgj-lPYhMZbX8Pz8_nOCov2w_ns1JzoM3WQyjhTXkuVe3yGg-AA062pcrODfbEKC_E-eetb5BkUtt_L8FAkMAse5BnaTu6ndYF5UrqPTeVMD4Xziw-wXrAa7y9TbS8KVl1m117zU7RaUSDQPMawt4IlHhLVnBHcSYfED4Xf0wfAyab8saohvTNnRxq2uU5pHQzFXjCEmiUJpSKLfwu3VGLvBjU1vBKZG9-pUrLnsZfqDqho7rEaeOEx0ep78DM0SCBPfMrYZvoHtohcikU8A0u4iGDHh5aUwatsS7YJJxSVLvUtYWzTncQ6e9r1RzGNuYBxp=w1838-h1378-no" alt="" />
+                                <div class="title">Hack</div>
+                            </div>
+                        </div>
+                        <div class="carousel-navigation is-overlay">
+                            <div class="carousel-nav-left">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="carousel-nav-right">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <center>
+            <h1 class="title is-1" style="padding: 7px;">FAQ</h1>
+        </center>
+        <br>
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical wow slideInUp" data-wow-delay="0.3s">
+                  <article class="tile is-child notification is-primary">
+                    <p class="title">What should I bring?</p>
+                    <p class="subtitle">
+                        <span>  <ul>
+                           <li>Laptop 💻</li>
+                            <li>Phone 📱</li>
+                            <li>Chargers 🔋</li>
+                            <li>Powerstrips and extension cords ⚡</li>
+                            <li>Sleeping bags and pillows 🛏️</li>
+                            <li>Reuseable water bottle🚰</li>
+                            <li>Extra snacks 🍿</li>
+                            <li>Imagination ☁️</li>
+                        </ul>
+                    </span>
+                    </p>
+                  </article>
+                  <article class="tile is-child notification is-warning" data-wow-delay="0.5s">
+                    <p class="title">Can I work in groups?</p>
+                    <p class="subtitle">
+                        <span>Yes you may! We recommend you work in groups, but remember only a max of 4 people.<span>
+                    </p>
+                  </article>
+                </div>
+                <div class="tile is-parent wow slideInUp">
+                  <article class="tile is-child notification is-info">
+                    <p class="title">Can I win anything?</p>
+                    <p class="subtitle"><span>Of course! At HackSB, you will have the opportunity to compete with others and win many prizes</span>
+                    </p>
+                    <figure class="image is-4by3" data-wow-delay="0.7s">
+                      <img style="border-radius: 0.7em;" src="https://lh3.googleusercontent.com/rZ8tzwALiMlav7iadcfB3mz2gSY_PScVNbrDF6XE1F-tgOO9Zct6cQk-6fwMxhXY_eD8xKPzz2SrfXve-KigeeR1hrk5lnWPcbuYwjJBSgoLY7hmqNw04SAjdXZMu1QVqtCAkYRqhiQKhm29lStA98qnvDI0s98-xXDqtOzP8fqrVcqg21mQ_emOVEcQ0prU9tKU7xM4zOaowXAPlwuTe8IZCpL-KG0hFECnZyPwbGOsi-JLcW8LuFusK8HJJE6wLo-Qmu0QEwqwWH_xNOGizg3iaUeyk9xCwqmg_CsU5sb5sTaOSZvPfPe12X3OP7ynuiK8-w7ASnYTQFOemtAWAUg2kswuwppzY36xNvJrWokq894HGEzU9uAen01zdo0bqrrA26gxd11bvXl9Op5-NCbNqsD7tblEKzY1R4Qsys5f4WmL13c1eHbddih_iLzFG2Vw-P7FlSGEHnS4VRiISTKRO0kD10nBUvTM7tSDamJcKDt_7QGmyeztcDR9qAp8ixL9bUFCOG3SleLXQG5-FHLuYNlxvUJF99CyB1FrjQV0Kt71HhsWprE5ety21RUODdm-j6MUEe8FjloDGCvFa4VBkbnWjrtpkZbawd6kLKXsukqSt_cNSQMC-ocqDvBR-y2Aw1eUUb4OrSK6PEvg-g4u8vQ6vyRA9PFkVa8aGgIu5rsU6jdaL6mN3oOSO9_GgXlpPjY7dSFSYzbJ8-3d3li7VCCIGvzGHkPNJbQtv6kBQbtF=w1838-h1378-no">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent wow slideInLeft">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">Do I need any prior experience?</p>
+                  <p class="subtitle">
+                    <!-- Line#IV ahgbxyhtqbcfbjwcxlzefkrfulkxiu -->
+                    <span>Not at all! The less experience you have, the more you can learn!<span>
+                  </p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent wow slideInRight" data-wow-delay="0.4s">
+              <article class="tile is-child notification is-success">
+                <div class="content">
+                  <p class="title"> Who can attend?</p>
+                  <p class="subtitle">
+                    <span>All high school students are welcome, even if you do not attend SBHS. If you are a college
+                        student, and interested in mentoring, please contact us!
+                        <br><br>
+                        <div style="bottom: 10;">
+                        <small>Please direct all mentoring
+                            inquiries to <a class="gfont" href="mailto:team@hacksb.org">team@hacksb.org</a></small></div>
+                        </span>
+                  </p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+            </span>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <section id="schedule">
+        <center>
+            <h1 class="title is-1">Schedule</h1>
+            <h4>⚠️ Subject to change</h4>
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Rm #</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">9:30 AM</th>
+                    <td>Check-in Opens 🚪</td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10:00 AM</th>
+                    <td>Javascript Intro</td>
+                    <td>Red Cafeteria</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10:30 AM</th>
+                    <td>Opening Ceremony 🎊</td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11:00 AM</th>
+                    <td>Hacking Begins! 💻</td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11:30 AM</th>
+                    <td>Python Intro</td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12:00 PM</th>
+                    <td>Lunch 🍱 </td>
+                    <td><RedCaf/></td>
+                  </tr>
+                    <th scope="row">6:30 PM</th>
+                    <td>Dinner</td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7:30 AM</th>
+                    <td>Intro to AI</td>
+                    <td><BlueCaf/></td>
+                  </tr>
+                    <th scope="row">7:00 AM</th>
+                    <td>Breakfast 🍱 </td>
+                    <td><RedCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12:30 AM</th>
+                    <td>Lunch 🍱 </td>
+                    <td><BlueCaf/></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2:00 PM</th>
+                    <td>Closing Ceremony</td>
+                    <td><BlueCaf/></td>
+                  </tr>
+                </tbody>
+              </table>
+    </section>
+    </center>
+    <section id="sponsors">
+       <center><hr> SPONSORS</h1></center>
+       <center>
+           <img src="/media/sponsors.svg" alt="">
+       </center>
+        <br>
+           <center><h1 class="title is-5">Want to sponsor us? Please contact us at <a href="mailto:team@hacksb.org" class="gfont">team@hacksb.org</a></h1>
+        </center>
+    </section>
+    <nav id="dot-nav"></nav>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a href="https://twitter.com/thehacksb"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thehacksb/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/theHackSB"><i class="fab fa-github"></i></a>
+            <i class="fas fa-envelope" onclick="window.open('mailto:sbcompsciclub@gmail.com')"></i>
+            <br>
+            <a href="https://mlh.io/privacy">Privacy Policy</a> | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code
+                of Conduct</a>
+            <p>
+                <i class="far fa-copyright"></i> 2020 Copyright: HackSB
+            </p>
+        </div>
+    </footer>
+    </div>
+    <div id="snackbar">Loading...</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+<script>
+    let myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    const config = {
+        apiKey: "AIzaSyArFWjDB_RY6JzTLOkCLROvpSbpeqoCnrw",
+        authDomain: "hacksbreg.firebaseapp.com",
+        databaseURL: "https://hacksbreg.firebaseio.com",
+        projectId: "hacksbreg",
+        storageBucket: "hacksbreg.appspot.com",
+        messagingSenderId: "1064689868252"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="scripts/smooth-scroll.polyfills.min.js"></script>
+<script src="scripts/lil-query.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/bulma-carousel.min.js"></script>
+<script src="scripts/particles.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>
