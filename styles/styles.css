@@ -266,7 +266,7 @@ border-bottom-left-radius: 10px !important;
    background-size: cover;
 }
 #navbarBasicExample{
-    background: rgba(255, 255, 255, 0.0) !important;
+    background: rgb(0, 0, 0) !important;
 }
 footer .fab, footer .fas{
 padding: 5px;
