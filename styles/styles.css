@@ -353,9 +353,22 @@ BlueCaf{
 BlueCaf::after{
     content: 'Blue Cafeteria';
 }
+Library{
+    color: rgb(0, 0, 0) !important;
+}
+Library::after{
+    content: 'Library';
+}
+WL{
+    color: rgb(87, 0, 90) !important;
+}
+WL::after{
+    content: 'Writing Lab';
+}
 RedCaf{
     color: red !important;
 }
 RedCaf::after{
     content: 'Red Cafeteria';
+}
 /* Line#FIVE lcqniihnagepahgpprniudlvuotdlv */
