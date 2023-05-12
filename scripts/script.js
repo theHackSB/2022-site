@@ -117,6 +117,7 @@ let toggleModal = () => {
 window.onscroll = function() {
     document.getElementsByClassName('navbar')[0].style.background = '';
 }
+
 particlesJS("particles-js", {
     "particles": {
         "number": {
