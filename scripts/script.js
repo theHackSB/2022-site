@@ -109,7 +109,7 @@ const submit = () => {
 }
 let toggleModal = () => {
     //snackbar('Sorry, Signups didn');
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSf4wmh5HOpv_rn01JHnGWVol4OD57ZAosCw6LrNHJ8-XMTevA/viewform');
+    window.open('https://forms.gle/MUz794APdY3Fkcgu5');
     //let ele = id('signup-modal');
     //ele.classList.toggle("is-active");
 }
